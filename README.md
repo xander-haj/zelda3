@@ -60,21 +60,22 @@ Same Steps 1-7 above<br/>
 
 ## Installing libraries on Linux/MacOS
 1. Open a terminal
-2. Install pip if not already installed
+2. Install pip if needed and not already installed
 ```sh
 python3 -m ensurepip
 ```
 3. Clone the repo and `cd` into it
 ```sh
-git clone https://github.com/snesrev/zelda3
+git clone https://github.com/xander-haj/zelda3
 cd zelda3
 ```
-4. Install requirements using pip
-```sh
+4. Install requirements using pip or apt
+* Ubuntu/Debian `sudo apt install python3-pil python3-yaml
+* Other: ```sh
 python3 -m pip install -r requirements.txt
 ```
 5. Install SDL2
-* Ubuntu/Debian `sudo apt install libsdl2-dev`
+* Ubuntu/Debian `sudo apt install libsdl2-dev
 * Fedora Linux `sudo dnf in sdl2-devel`
 * Arch Linux `sudo pacman -S sdl2`
 * macOS: `brew install sdl2` (you can get homebrew [here](https://brew.sh/))
@@ -111,7 +112,7 @@ nxlink -s zelda3.nro
 
 ## More Compilation Help
 
-Look at the wiki at https://github.com/snesrev/zelda3/wiki for more help.
+Look at the wiki at https://github.com/xander-haj/zelda3/wiki for more help.
 
 The ROM needs to be named `zelda3.sfc` and has to be from the US region with this exact SHA256 hash
 `66871d66be19ad2c34c927d6b14cd8eb6fc3181965b6e517cb361f7316009cfb`
